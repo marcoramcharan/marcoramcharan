@@ -3,90 +3,785 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/contact.css" />
-    <!-- Title and Meta Tags -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <title>Contact Coolcoders | Web Experts in Durban, KwaZulu-Natal</title>
+    <title>Contact Marco Ramcharan | Get Your Website Built</title>
     <meta
       name="description"
-      content="Get in touch with Coolcoders, your Durban-based web design, software, and hosting team. Let's build your next big idea — contact us today."
+      content="Get in touch with Marco Ramcharan for affordable website design in South Africa. R2,500 websites + R100/month hosting. WhatsApp or email today."
     />
     <meta
       name="keywords"
-      content="contact Coolcoders, web developers Durban, tech company KZN, software support Durban, website help KwaZulu-Natal"
+      content="contact Marco Ramcharan, web developer Durban, affordable websites South Africa"
     />
 
-    <!-- Open Graph Tags for Social Sharing -->
-    <meta
-      property="og:title"
-      content="Contact Coolcoders | Web Experts in Durban, KwaZulu-Natal"
-    />
-    <meta
-      property="og:description"
-      content="Reach out to Coolcoders for expert web design, software development, and hosting services in Durban. Fast response and friendly service."
-    />
-    <meta property="og:url" content="https://coolcoders.co.za/contact" />
-    <meta property="og:type" content="website" />
-    <!-- JSON-LD Structured Data (Local Business Schema) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Coolcoders",
-        "url": "https://www.coolcoders.co.za",
-        "logo": "https://www.coolcoders.co.za/images/logo4.png",
-        "image": "https://www.coolcoders.co.za/images/logo4.png",
-        "description": "Coolcoders is a Durban-based digital agency offering web design, software development, web testing, and hosting services.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Durban",
-          "addressRegion": "KwaZulu-Natal",
-          "addressCountry": "ZA"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+27 84 293 7130",
-          "contactType": "customer support"
-        },
-        "sameAs": [
-          "https://www.facebook.com/coolcoders",
-          "https://www.instagram.com/coolcoders"
-        ]
-      }
-    </script>
-    <meta
-      property="og:image"
-      content="https://coolcoders.co.za/contact-og-image.jpg"
-    />
-    <!-- Replace with actual image -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Michroma&family=Tourney:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
       rel="stylesheet"
     />
+    
+    <style>
+:root {
+    --black: black;
+    --dark-gray: black;
+    --medium-gray: #666666;
+    --light-gray: #e0e0e0;
+    --off-white: #f7f7f7;
+    --white: #ffffff;
+    --whatsapp: #25D366;
+    --accent: black;
+}
+
+.tourney-section {
+    font-family: "Viga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 0;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--black);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--dark-gray);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1fa855;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* Contact Hero */
+.contact-hero {
+    padding: 12rem 0 8rem;
+    background-color: var(--white);
+    position: relative;
+}
+
+.decorative-element {
+    position: absolute;
+    top: 8rem;
+    left: 5%;
+    font-size: 20rem;
+    color: var(--off-white);
+    font-weight: 800;
+    line-height: 1;
+    z-index: 0;
+    font-family: Georgia, serif;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-heading {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.contact-heading span {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 6rem;
+    margin-top: 5rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-card {
+    background-color: var(--off-white);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    position: relative;
+    border-left: 4px solid var(--black);
+}
+
+.contact-card-number {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+    line-height: 1;
+}
+
+.contact-method-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.contact-details {
+    list-style: none;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.contact-info-item {
+    color: var(--medium-gray);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.contact-info-item:hover {
+    color: var(--black);
+}
+
+.whatsapp-card {
+    background-color: var(--whatsapp);
+    border-left-color: var(--whatsapp);
+}
+
+.whatsapp-card .contact-method-heading,
+.whatsapp-card .contact-icon,
+.whatsapp-card .contact-info-item {
+    color: white;
+}
+
+.whatsapp-card .contact-card-number {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-card .contact-info-item:hover {
+    color: white;
+    opacity: 0.9;
+}
+
+/* Contact Form */
+.contact-form-section {
+    background-color: var(--off-white);
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.form-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.form-description {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid var(--light-gray);
+    background-color: var(--white);
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--black);
+}
+
+.contact-form .btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+/* Map Section */
+.map-section {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.map-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.map-subheading {
+    font-size: 1.3rem;
+    color: var(--medium-gray);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.map-text {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.map-frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--light-gray);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 0 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-heading:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 0.8rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Nav */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-active .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 6rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white);
+}
+
+.mobile-nav-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.mobile-nav-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.mobile-nav-close:before,
+.mobile-nav-close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    top: 50%;
+    left: 0;
+}
+
+.mobile-nav-close:before {
+    transform: rotate(45deg);
+}
+
+.mobile-nav-close:after {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 0;
+}
+
+.mobile-nav-links li:nth-child(odd) a {
+    background-color: var(--off-white);
+    color: var(--black);
+}
+
+.mobile-nav-links li:nth-child(even) a {
+    background-color: var(--white);
+    color: var(--medium-gray);
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-nav-links a:hover {
+    padding-left: 2.5rem;
+    color: var(--black);
+}
+
+.mobile-nav .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 990px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .map-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-links, 
+    header .btn {
+        display: none;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+
+    .contact-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .decorative-element {
+        font-size: 10rem;
+        top: 6rem;
+    }
+
+    .contact-heading {
+        font-size: 3rem;
+    }
+
+    .contact-heading span {
+        font-size: 1.2rem;
+    }
+
+    .contact-form-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .map-section {
+        padding: 4rem 0;
+    }
+
+    .map-heading {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        font-size: 2.5rem;
+    }
+
+    .decorative-element {
+        font-size: 8rem;
+    }
+}
+    </style>
   </head>
   <body class="tourney-section">
-    <!-- Header -->
     <!-- Header -->
     <header>
       <div class="container">
         <nav>
-          <a href="/">
-            <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          </a>
+          <a href="/" class="logo">MARCO RAMCHARAN</a>
           <ul class="nav-links">
             <li><a href="/">HOME</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/portfolio/">PORTFOLIO</a></li>
-            <li><a href="/contact/">CONTACT</a></li>
-            <li><a href="/testimonials">TESTIMONIALS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/portfolio">WORK</a></li>
+            <li><a href="/contact">CONTACT</a></li>
           </ul>
-          <a href="/contact" class="btn">Get Started</a>
+          <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
           <button class="mobile-nav-toggle" aria-label="Toggle navigation">
             <div class="hamburger">
               <span></span>
@@ -98,20 +793,21 @@
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav-header">
-          <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          <button
-            class="mobile-nav-close"
-            aria-label="Close navigation"
-          ></button>
+          <span class="mobile-nav-logo">MARCO RAMCHARAN</span>
+          <button class="mobile-nav-close" aria-label="Close navigation"></button>
         </div>
         <ul class="mobile-nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Work</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
-        <a href="/contact" class="btn">Get Started</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -122,117 +818,70 @@
         <div class="decorative-element">"</div>
         <div class="contact-hero-content">
           <h1 class="contact-heading">
-            Get In Touch<span>Let's create something amazing</span>
+            Let's Build Your Website<span>Fast, affordable, no hassle</span>
           </h1>
 
           <div class="contact-grid">
             <div class="contact-methods">
-              <div class="contact-card">
+              <div class="contact-card whatsapp-card">
                 <div class="contact-card-number">01</div>
-                <h3 class="contact-method-heading">Direct Contact</h3>
+                <h3 class="contact-method-heading">WhatsApp Me</h3>
                 <ul class="contact-details">
                   <li>
-                    <span class="contact-icon">✉</span>
-                    <a
-                      href="mailto:marco@coolcoders.co.za"
-                      class="contact-info-item"
-                      >marco@coolcoders.co.za</a
-                    >
+                    <span class="contact-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                      </svg>
+                    </span>
+                    <a href="https://wa.me/27123456789" class="contact-info-item">+27 12 345 6789</a>
                   </li>
-                  <li>
-                    <span class="contact-icon">☏</span>
-                    <a href="tel:+27842937130" class="contact-info-item"
-                      >084 293 7130</a
-                    >
+                  <li style="color: white; font-size: 0.9rem; margin-top: 0.5rem;">
+                    Fastest way to reach me - I usually reply within an hour
                   </li>
                 </ul>
               </div>
 
               <div class="contact-card">
                 <div class="contact-card-number">02</div>
-                <h3 class="contact-method-heading">Follow Us</h3>
+                <h3 class="contact-method-heading">Email / Call</h3>
                 <ul class="contact-details">
                   <li>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61576913840290"
-                      class="contact-info-item"
-                      >FACEBOOK</a
-                    >
+                    <span class="contact-icon">✉</span>
+                    <a href="mailto:marco@coolcoders.co.za" class="contact-info-item">marco@coolcoders.co.za</a>
                   </li>
                   <li>
-                    <a
-                      href="https://www.instagram.com/coolcoders.co.za/"
-                      class="contact-info-item"
-                      >INSTAGRAM</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://x.com/cool_coders"
-                      class="contact-info-item"
-                      >TWITTER</a
-                    >
+                    <span class="contact-icon">☏</span>
+                    <a href="tel:+27123456789" class="contact-info-item">+27 12 345 6789</a>
                   </li>
                 </ul>
               </div>
             </div>
 
             <div class="contact-form-section">
-              <h3 class="form-heading">Send Us a Message</h3>
+              <h3 class="form-heading">Or Send A Message</h3>
               <p class="form-description">
-                Have a project in mind? Fill out the form below and we'll get
-                back to you within 24 hours.
+                Fill out the form and I'll get back to you as soon as I can. Usually same day.
               </p>
 
-              <form
-                action="https://formspree.io/f/xzzrlgjk"
-                method="POST"
-                class="contact-form"
-              >
+              <form action="https://formspree.io/f/xzzrlgjk" method="POST" class="contact-form">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                  />
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your email"
-                    required
-                  />
+                  <input type="email" id="email" name="email" placeholder="Your email" required />
                 </div>
                 <div class="form-group">
                   <label for="subject">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="What can we help you with?"
-                  />
+                  <input type="text" id="subject" name="subject" placeholder="What kind of website do you need?" />
                 </div>
                 <div class="form-group">
                   <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="Tell us about your project"
-                    required
-                  ></textarea>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell me about your business and what you need" required></textarea>
                 </div>
                 <button type="submit" class="btn">Send Message</button>
-                <p
-                  id="form-status"
-                  style="margin-top: 1em; font-weight: bold"
-                ></p>
+                <p id="form-status" style="margin-top: 1em; font-weight: bold"></p>
               </form>
             </div>
           </div>
@@ -245,109 +894,79 @@
       <div class="container">
         <div class="map-container">
           <div class="map-content">
-            <h2 class="map-heading">Digital First, Global Reach</h2>
-            <h3 class="map-subheading">We operate in the digital sphere</h3>
+            <h2 class="map-heading">Based in Durban</h2>
+            <h3 class="map-subheading">Working with businesses across South Africa</h3>
             <p class="map-text">
-              Based in the vibrant city of Durban, South Africa, we've embraced
-              a fully digital approach to work. This allows us to collaborate
-              with clients and talents worldwide, delivering exceptional digital
-              experiences without the constraints of physical boundaries.
+              I'm based in Durban but work with small businesses all over SA. Whether you're in Johannesburg, Cape Town, or anywhere in between - if you need an affordable website, I can help.
             </p>
-            <a href="/about/" class="btn">Learn More About Us</a>
+            <a href="/about" class="btn">More About Me</a>
           </div>
           <div class="map-frame">
-            <img src="/images/durban_map.png" alt="" />
+            <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #f7f7f7, #e0e0e0); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #666;">
+              📍 Durban
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer - Magazine Style -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="footer-about">
-            <img
-              src="/images/logo_new_alt.png"
-              height="60px"
-              width="auto"
-              alt=""
-            />
+            <span class="footer-logo">MARCO RAMCHARAN</span>
             <p>
-              We design and develop custom websites that help businesses
-              establish a strong online presence and achieve their digital
-              goals.
+              I design and develop affordable websites that help South African small businesses get online and grow.
             </p>
-            <div class="social-links">
-              <div class="social-links">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61576913840290"
-                  class="social-icon"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/cool_coders" class="social-icon">
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/coolcoders.co.za/"
-                  class="social-icon"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linktr.ee/coolcoders" class="social-icon">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/@coolcoders"
-                  class="social-icon"
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
           </div>
           <div class="footer-nav">
             <h4 class="footer-heading">Navigation</h4>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/testimonials">Testimonials</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-services">
-            <h4 class="footer-heading">Services</h4>
+            <h4 class="footer-heading">What I Offer</h4>
             <ul class="footer-links">
-              <li><a href="/">Website Design</a></li>
-              <li><a href="/">Custom Software</a></li>
-              <li><a href="/">SEO</a></li>
-              <li><a href="/">Maintenance</a></li>
+              <li><a href="/#services">Website Design</a></li>
+              <li><a href="/#services">48-Hour Delivery</a></li>
+              <li><a href="/#services">Hosting & Support</a></li>
+              <li><a href="/#pricing">R2,500 Websites</a></li>
             </ul>
           </div>
           <div class="footer-contact">
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">Get in Touch</h4>
             <ul class="footer-links">
               <li>marco@coolcoders.co.za</li>
-              <li>084 293 7130</li>
-              <li>Durban</li>
+              <li><a href="https://wa.me/27123456789">+27 12 345 6789</a></li>
+              <li>Durban, South Africa</li>
             </ul>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2025 CoolCoders. All Rights Reserved.
+          &copy; 2025 Marco Ramcharan. All Rights Reserved.
         </div>
       </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27123456789" class="whatsapp-float" aria-label="Contact on WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
     <script>
+      // Form submission handler
       const form = document.querySelector(".contact-form");
       const status = document.getElementById("form-status");
 
       form.addEventListener("submit", async function (e) {
         e.preventDefault();
-
-        // Collect form data
         const formData = new FormData(form);
 
         try {
@@ -366,12 +985,9 @@
           } else {
             const data = await response.json();
             if (data.errors) {
-              status.textContent = data.errors
-                .map((error) => error.message)
-                .join(", ");
+              status.textContent = data.errors.map((error) => error.message).join(", ");
             } else {
-              status.textContent =
-                "❌ Oops! There was a problem submitting your form.";
+              status.textContent = "❌ Oops! There was a problem submitting your form.";
             }
             status.style.color = "red";
           }
@@ -380,7 +996,36 @@
           status.style.color = "red";
         }
       });
+
+      // Mobile Navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileNavClose = document.querySelector('.mobile-nav-close');
+      const overlay = document.querySelector('.overlay');
+      const body = document.body;
+
+      function openMobileNav() {
+        mobileNav.classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('no-scroll');
+        mobileNavToggle.classList.add('nav-active');
+      }
+
+      function closeMobileNav() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+        mobileNavToggle.classList.remove('nav-active');
+      }
+
+      mobileNavToggle.addEventListener('click', openMobileNav);
+      mobileNavClose.addEventListener('click', closeMobileNav);
+      overlay.addEventListener('click', closeMobileNav);
+
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileNav);
+      });
     </script>
-    <script src="/scripts/navbar.js"></script>
   </body>
 </html>

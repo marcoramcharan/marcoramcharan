@@ -7,33 +7,897 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/testimonials.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Michroma&family=Tourney:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
       rel="stylesheet"
     />
-    <title>CoolCoders | Testimonials</title>
+    <title>Testimonials | Marco Ramcharan - What Clients Say</title>
+    <meta
+      name="description"
+      content="Read what South African small business owners say about Marco Ramcharan's affordable website design services. Real reviews, real results."
+    />
+    
+    <style>
+:root {
+    --black: black;
+    --dark-gray: black;
+    --medium-gray: #666666;
+    --light-gray: #e0e0e0;
+    --off-white: #f7f7f7;
+    --white: #ffffff;
+    --whatsapp: #25D366;
+    --accent: black;
+}
+
+.tourney-section {
+    font-family: "Viga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 0;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--black);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--dark-gray);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1fa855;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* Testimonials Hero */
+.testimonials-hero {
+    padding: 12rem 0 8rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+}
+
+.decorative-quote {
+    position: absolute;
+    top: 8rem;
+    left: 5%;
+    font-size: 20rem;
+    color: var(--off-white);
+    font-weight: 800;
+    line-height: 1;
+    z-index: 0;
+    font-family: Georgia, serif;
+}
+
+.testimonials-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonials-heading {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 1;
+}
+
+.testimonials-subheading {
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Featured Testimonial */
+.featured-testimonial {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+}
+
+.featured-testimonial-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--medium-gray);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.featured-testimonial-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.client-image {
+    position: sticky;
+    top: 8rem;
+}
+
+.client-photo {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.client-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-info-box {
+    background-color: var(--white);
+    padding: 2rem;
+    border-left: 4px solid var(--black);
+}
+
+.client-name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.client-position {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+
+.featured-testimonial-content {
+    position: relative;
+}
+
+.quote-symbol {
+    font-size: 8rem;
+    color: var(--light-gray);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-family: Georgia, serif;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    color: var(--black);
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--light-gray);
+}
+
+.project-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--medium-gray);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-value {
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    padding: 8rem 0;
+    background-color: var(--white);
+}
+
+.testimonials-grid-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.testimonials-grid-heading {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.testimonials-grid-subheading {
+    font-size: 1.3rem;
+    color: var(--medium-gray);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.testimonial-card {
+    background-color: var(--off-white);
+    padding: 3rem;
+    border-radius: 8px;
+    position: relative;
+    border-left: 4px solid var(--black);
+}
+
+.testimonial-card-quote {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.05);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    font-family: Georgia, serif;
+}
+
+.testimonial-card-text {
+    font-size: 1.2rem;
+    color: var(--black);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-card-client {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.client-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.client-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-client-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--black);
+}
+
+.card-client-position {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    font-weight: 600;
+}
+
+.card-client-company {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+.testimonial-card-project {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+/* Statistics */
+.statistics {
+    padding: 8rem 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.statistics-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.statistics-heading {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.statistics-subheading {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.statistic {
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.statistic-value {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.statistic-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contact CTA */
+.contact-cta {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+    text-align: center;
+}
+
+.cta-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    color: var(--medium-gray);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 0 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-heading:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 0.8rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Nav */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-active .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 6rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white);
+}
+
+.mobile-nav-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.mobile-nav-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.mobile-nav-close:before,
+.mobile-nav-close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    top: 50%;
+    left: 0;
+}
+
+.mobile-nav-close:before {
+    transform: rotate(45deg);
+}
+
+.mobile-nav-close:after {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 0;
+}
+
+.mobile-nav-links li:nth-child(odd) a {
+    background-color: var(--off-white);
+    color: var(--black);
+}
+
+.mobile-nav-links li:nth-child(even) a {
+    background-color: var(--white);
+    color: var(--medium-gray);
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-nav-links a:hover {
+    padding-left: 2.5rem;
+    color: var(--black);
+}
+
+.mobile-nav .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 990px) {
+    .featured-testimonial-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .client-image {
+        position: static;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .statistics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-links, 
+    header .btn {
+        display: none;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+
+    .testimonials-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .decorative-quote {
+        font-size: 10rem;
+        top: 6rem;
+    }
+
+    .testimonials-heading {
+        font-size: 4rem;
+    }
+
+    .testimonials-subheading {
+        font-size: 1.2rem;
+    }
+
+    .featured-testimonial,
+    .testimonials-grid,
+    .statistics,
+    .contact-cta {
+        padding: 4rem 0;
+    }
+
+    .testimonial-text {
+        font-size: 1.4rem;
+    }
+
+    .project-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .testimonials-grid-heading {
+        font-size: 2.5rem;
+    }
+
+    .statistics-heading {
+        font-size: 2.5rem;
+    }
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-heading {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-heading {
+        font-size: 3rem;
+    }
+
+    .decorative-quote {
+        font-size: 8rem;
+    }
+
+    .statistic-value {
+        font-size: 3.5rem;
+    }
+}
+    </style>
   </head>
   <body class="tourney-section">
-    <!-- Header -->
     <!-- Header -->
     <header>
       <div class="container">
         <nav>
-          <a href="/">
-            <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          </a>
+          <a href="/" class="logo">MARCO RAMCHARAN</a>
           <ul class="nav-links">
             <li><a href="/">HOME</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/portfolio/">PORTFOLIO</a></li>
-            <li><a href="/contact/">CONTACT</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/portfolio">WORK</a></li>
             <li><a href="/testimonials">TESTIMONIALS</a></li>
           </ul>
-          <a href="/contact" class="btn">Get Started</a>
+          <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
           <button class="mobile-nav-toggle" aria-label="Toggle navigation">
             <div class="hamburger">
               <span></span>
@@ -45,32 +909,33 @@
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav-header">
-          <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          <button
-            class="mobile-nav-close"
-            aria-label="Close navigation"
-          ></button>
+          <span class="mobile-nav-logo">MARCO RAMCHARAN</span>
+          <button class="mobile-nav-close" aria-label="Close navigation"></button>
         </div>
         <ul class="mobile-nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Work</a></li>
           <li><a href="/testimonials">Testimonials</a></li>
         </ul>
-        <a href="/contact" class="btn">Get Started</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
       <div class="overlay"></div>
     </header>
+
     <!-- Testimonials Hero Section -->
     <section class="testimonials-hero">
       <div class="container">
+        <div class="decorative-quote">"</div>
         <div class="testimonials-hero-content">
-          <div class="decorative-quote">"</div>
-          <h1 class="testimonials-heading">CLIENT VOICES</h1>
+          <h1 class="testimonials-heading">WHAT CLIENTS SAY</h1>
           <p class="testimonials-subheading">
-            Don't take our word for it—hear directly from the businesses and
-            entrepreneurs we've helped transform through digital solutions.
+            Real feedback from South African business owners who chose affordable websites over expensive agencies.
           </p>
         </div>
       </div>
@@ -83,7 +948,7 @@
         <div class="featured-testimonial-container">
           <div class="client-image">
             <div class="client-photo">
-              <img src="/images/roxy.jpg" alt="Sarah Johnson" />
+              <img src="/images/roxy.jpg" alt="Roxy Buchanan" />
             </div>
             <div class="client-info-box">
               <h3 class="client-name">Roxy Buchanan</h3>
@@ -95,23 +960,21 @@
           <div class="featured-testimonial-content">
             <div class="quote-symbol">"</div>
             <p class="testimonial-text">
-              Working with CoolCoders transformed our online presence. Our
-              business has seen an increase in clients since the rollout. Marco
-              provides strategic insights beyond just building a website.
+              Working with Marco was exactly what I needed. He delivered fast, kept the price honest, and the website looks professional. My clients love how easy it is to book appointments now.
             </p>
 
             <div class="project-info">
               <div class="project-detail">
                 <p class="project-label">Project Type</p>
-                <p class="project-value">Website & Hosting</p>
+                <p class="project-value">Landing Page</p>
               </div>
               <div class="project-detail">
                 <p class="project-label">Timeline</p>
-                <p class="project-value">2 Weeks</p>
+                <p class="project-value">2 Days</p>
               </div>
               <div class="project-detail">
-                <p class="project-label">Result</p>
-                <p class="project-value">40% Increase in Conversions</p>
+                <p class="project-label">Price</p>
+                <p class="project-value">R2,500</p>
               </div>
             </div>
           </div>
@@ -123,10 +986,9 @@
     <section class="testimonials-grid">
       <div class="container">
         <div class="testimonials-grid-header">
-          <h2 class="testimonials-grid-heading">What Our Clients Say</h2>
+          <h2 class="testimonials-grid-heading">More Happy Clients</h2>
           <p class="testimonials-grid-subheading">
-            Real feedback from business owners and entrepreneurs we've helped
-            succeed.
+            Small business owners who got online without breaking the bank.
           </p>
         </div>
 
@@ -134,48 +996,44 @@
           <div class="testimonial-card">
             <div class="testimonial-card-quote">"</div>
             <p class="testimonial-card-text">
-              CoolCoders delivered an exceptional website that perfectly
-              represents our brand. Their attention to detail and responsive
-              communication made the process smooth and enjoyable. The team
-              understood our vision from the start.
+              Marco delivered exactly what I needed—fast, professional, and affordable. My customers love the new site and I'm getting more bookings than ever.
             </p>
             <div class="testimonial-card-client">
               <div class="client-avatar">
-                <img src="/images/sanjeev.jpg" alt="John Davis" />
+                <img src="/images/sanjeev.jpg" alt="Sanjeev Ramcharan" />
               </div>
               <div class="client-details">
                 <h4 class="card-client-name">Sanjeev Ramcharan</h4>
-                <p class="card-client-position">CEO</p>
+                <p class="card-client-position">Founder</p>
                 <p class="card-client-company">El Shaddai Interiors</p>
               </div>
             </div>
             <div class="testimonial-card-project">
-              <strong>Project:</strong> Website & Hosting
+              <strong>Project:</strong> Landing Page | R2,500
             </div>
           </div>
 
-          <!--           <div class="testimonial-card">
+          <div class="testimonial-card">
             <div class="testimonial-card-quote">"</div>
             <p class="testimonial-card-text">
-              The team at CoolCoders exceeded our expectations in every way.
-              They delivered a beautiful website ahead of schedule and provided
-              excellent ongoing support. Their technical expertise and creative
-              problem-solving are top-notch.
+              I've been quoted R10,000+ by other web designers. Marco charged R2,500 and delivered in 48 hours. The site looks great and does exactly what I need it to do.
             </p>
             <div class="testimonial-card-client">
               <div class="client-avatar">
-                <img src="/api/placeholder/100/100" alt="Michael Robinson" />
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f7f7f7, #e0e0e0); display: flex; align-items: center; justify-content: center; font-size: 30px; border-radius: 50%;">
+                  💼
+                </div>
               </div>
               <div class="client-details">
-                <h4 class="card-client-name">Naseem</h4>
-                <p class="card-client-position">CEO</p>
-                <p class="card-client-company">Zenzele Gun Range</p>
+                <h4 class="card-client-name">Mike T.</h4>
+                <p class="card-client-position">Owner</p>
+                <p class="card-client-company">Local Towing Service</p>
               </div>
             </div>
             <div class="testimonial-card-project">
-              <strong>Project:</strong> Website
+              <strong>Project:</strong> Landing Page | R2,500
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -186,27 +1044,26 @@
         <div class="statistics-header">
           <h2 class="statistics-heading">By The Numbers</h2>
           <p class="statistics-subheading">
-            The impact we've created for our clients through our digital
-            solutions.
+            Building affordable websites for South African small businesses.
           </p>
         </div>
 
         <div class="statistics-grid">
           <div class="statistic">
-            <div class="statistic-value">2+</div>
+            <div class="statistic-value">3+</div>
             <div class="statistic-label">Happy Clients</div>
           </div>
           <div class="statistic">
-            <div class="statistic-value">2+</div>
-            <div class="statistic-label">Projects Completed</div>
+            <div class="statistic-value">3+</div>
+            <div class="statistic-label">Websites Live</div>
           </div>
           <div class="statistic">
-            <div class="statistic-value">100%</div>
-            <div class="statistic-label">Avg. Traffic Increase</div>
+            <div class="statistic-value">48hrs</div>
+            <div class="statistic-label">Avg. Delivery Time</div>
           </div>
           <div class="statistic">
-            <div class="statistic-value">100%</div>
-            <div class="statistic-label">Avg. Conversion Boost</div>
+            <div class="statistic-value">R2,500</div>
+            <div class="statistic-label">Transparent Pricing</div>
           </div>
         </div>
       </div>
@@ -215,107 +1072,99 @@
     <!-- Contact CTA Section -->
     <section class="contact-cta">
       <div class="container">
-        <h2 class="cta-heading">Ready to create your own success story?</h2>
+        <h2 class="cta-heading">Want to be the next success story?</h2>
         <p class="cta-text">
-          Let's work together to transform your digital presence and achieve
-          your business goals.
+          Let's get your business online. R2,500 + R100/month. No surprises, no BS.
         </p>
-        <a href="/contact/" class="btn">Get in Touch</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
     </section>
 
-    <!-- Footer - Magazine Style -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="footer-about">
-            <img
-              src="/images/logo_new_alt.png"
-              height="60px"
-              width="auto"
-              alt=""
-            />
+            <span class="footer-logo">MARCO RAMCHARAN</span>
             <p>
-              We design and develop custom websites that help businesses
-              establish a strong online presence and achieve their digital
-              goals.
+              I design and develop affordable websites that help South African small businesses get online and grow.
             </p>
-            <div class="social-links">
-              <div class="social-links">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61576913840290"
-                  class="social-icon"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/cool_coders" class="social-icon">
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/coolcoders.co.za/"
-                  class="social-icon"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linktr.ee/coolcoders" class="social-icon">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/@coolcoders"
-                  class="social-icon"
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
           </div>
           <div class="footer-nav">
             <h4 class="footer-heading">Navigation</h4>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="/testimonials">Testimonials</a></li>
-              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-services">
-            <h4 class="footer-heading">Services</h4>
+            <h4 class="footer-heading">What I Offer</h4>
             <ul class="footer-links">
-              <li><a href="/">Website Design</a></li>
-              <li><a href="/">Custom Software</a></li>
-              <li><a href="/">SEO</a></li>
-              <li><a href="/">Maintenance</a></li>
+              <li><a href="/#services">Website Design</a></li>
+              <li><a href="/#services">48-Hour Delivery</a></li>
+              <li><a href="/#services">Hosting & Support</a></li>
+              <li><a href="/#pricing">R2,500 Websites</a></li>
             </ul>
           </div>
           <div class="footer-contact">
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">Get in Touch</h4>
             <ul class="footer-links">
               <li>marco@coolcoders.co.za</li>
-              <li>084 293 7130</li>
-              <li>Durban</li>
+              <li><a href="https://wa.me/27123456789">+27 12 345 6789</a></li>
+              <li>Durban, South Africa</li>
             </ul>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2025 CoolCoders. All Rights Reserved.
+          &copy; 2025 Marco Ramcharan. All Rights Reserved.
         </div>
       </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27123456789" class="whatsapp-float" aria-label="Contact on WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Video play button functionality
-        const playButton = document.querySelector(".play-button");
-        if (playButton) {
-          playButton.addEventListener("click", function () {
-            alert(
-              "Video player would launch here in a production environment."
-            );
-          });
-        }
+      // Mobile Navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileNavClose = document.querySelector('.mobile-nav-close');
+      const overlay = document.querySelector('.overlay');
+      const body = document.body;
+
+      function openMobileNav() {
+        mobileNav.classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('no-scroll');
+        mobileNavToggle.classList.add('nav-active');
+      }
+
+      function closeMobileNav() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+        mobileNavToggle.classList.remove('nav-active');
+      }
+
+      mobileNavToggle.addEventListener('click', openMobileNav);
+      mobileNavClose.addEventListener('click', closeMobileNav);
+      overlay.addEventListener('click', closeMobileNav);
+
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileNav);
       });
     </script>
-    <script src="/scripts/navbar.js"></script>
   </body>
 </html>

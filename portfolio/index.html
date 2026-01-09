@@ -8,86 +8,766 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title and Meta Tags -->
-    <title>
-      Our Work | Coolcoders Portfolio - Websites & Software in Durban
-    </title>
+    <title>Portfolio | Marco Ramcharan - Recent Website Projects</title>
     <meta
       name="description"
-      content="Explore the Coolcoders portfolio: websites, software, and web projects we've built for businesses in Durban and beyond. See what we can do for you."
+      content="Check out Marco Ramcharan's recent website projects - affordable, professional sites for South African small businesses. R2,500 websites that work."
     />
     <meta
       name="keywords"
-      content="Coolcoders portfolio, Durban web projects, software showcase KZN, past work, web design examples South Africa"
+      content="Marco Ramcharan portfolio, website examples, Durban web projects, affordable websites South Africa"
     />
 
-    <!-- Open Graph Tags for Social Sharing -->
-    <meta
-      property="og:title"
-      content="Coolcoders Portfolio | Website & Software Projects in Durban"
-    />
-    <meta
-      property="og:description"
-      content="Take a look at our work — websites, software, and digital projects proudly built by Coolcoders for clients in Durban, KZN, and across South Africa."
-    />
-    <meta property="og:url" content="https://coolcoders.co.za/portfolio" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://coolcoders.co.za/portfolio-og-image.jpg"
-    />
-    <!-- Replace with actual image -->
-    <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- JSON-LD Structured Data (Local Business Schema) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Coolcoders",
-        "url": "https://www.coolcoders.co.za",
-        "logo": "https://www.coolcoders.co.za/images/logo4.png",
-        "image": "https://www.coolcoders.co.za/images/logo4.png",
-        "description": "Coolcoders is a Durban-based digital agency offering web design, software development, web testing, and hosting services.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Durban",
-          "addressRegion": "KwaZulu-Natal",
-          "addressCountry": "ZA"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+27 84 293 7130",
-          "contactType": "customer support"
-        },
-        "sameAs": [
-          "https://www.facebook.com/coolcoders",
-          "https://www.instagram.com/coolcoders"
-        ]
-      }
-    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Michroma&family=Tourney:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/portfolio.css" />
+    
+    <style>
+:root {
+    --black: black;
+    --dark-gray: black;
+    --medium-gray: #666666;
+    --light-gray: #e0e0e0;
+    --off-white: #f7f7f7;
+    --white: #ffffff;
+    --whatsapp: #25D366;
+    --accent: black;
+}
+
+.tourney-section {
+    font-family: "Viga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 0;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--black);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--dark-gray);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1fa855;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    padding: 12rem 0 8rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.portfolio-hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portfolio-heading {
+    font-size: 8rem;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    font-weight: 900;
+}
+
+.portfolio-subheading {
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Featured Project */
+.featured-project {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+}
+
+.featured-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--medium-gray);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.featured-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-number {
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.05);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.project-category {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--medium-gray);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.featured-content .btn {
+    margin-top: 2rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+    padding: 8rem 0;
+    background-color: var(--white);
+}
+
+.grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+
+.grid-heading {
+    font-size: 3.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.project-card {
+    background-color: var(--white);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.project-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--medium-gray);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.card-description {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    transition: gap 0.3s;
+}
+
+.card-link:hover {
+    gap: 1rem;
+}
+
+.card-link-arrow {
+    font-size: 1.2rem;
+}
+
+/* Contact CTA */
+.contact-cta {
+    padding: 8rem 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-cta .btn {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.contact-cta .btn:hover {
+    background-color: var(--whatsapp);
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 0 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-heading:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 0.8rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Nav */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-active .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 6rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white);
+}
+
+.mobile-nav-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.mobile-nav-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.mobile-nav-close:before,
+.mobile-nav-close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    top: 50%;
+    left: 0;
+}
+
+.mobile-nav-close:before {
+    transform: rotate(45deg);
+}
+
+.mobile-nav-close:after {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 0;
+}
+
+.mobile-nav-links li:nth-child(odd) a {
+    background-color: var(--off-white);
+    color: var(--black);
+}
+
+.mobile-nav-links li:nth-child(even) a {
+    background-color: var(--white);
+    color: var(--medium-gray);
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-nav-links a:hover {
+    padding-left: 2.5rem;
+    color: var(--black);
+}
+
+.mobile-nav .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 990px) {
+    .featured-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-links, 
+    header .btn {
+        display: none;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+
+    .portfolio-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .portfolio-heading {
+        font-size: 5rem;
+    }
+
+    .portfolio-subheading {
+        font-size: 1.2rem;
+    }
+
+    .featured-project,
+    .projects-grid,
+    .contact-cta {
+        padding: 4rem 0;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .grid-heading {
+        font-size: 2.5rem;
+    }
+
+    .cta-heading {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-heading {
+        font-size: 4rem;
+    }
+
+    .project-number {
+        font-size: 5rem;
+    }
+}
+    </style>
   </head>
   <body class="tourney-section">
     <!-- Header -->
     <header>
       <div class="container">
         <nav>
-          <a href="/">
-            <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          </a>
+          <a href="/" class="logo">MARCO RAMCHARAN</a>
           <ul class="nav-links">
             <li><a href="/">HOME</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/portfolio/">PORTFOLIO</a></li>
-            <li><a href="/contact/">CONTACT</a></li>
-            <li><a href="/testimonials">TESTIMONIALS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/portfolio">WORK</a></li>
+            <li><a href="/#contact">CONTACT</a></li>
           </ul>
-          <a href="/contact" class="btn">Get Started</a>
+          <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
           <button class="mobile-nav-toggle" aria-label="Toggle navigation">
             <div class="hamburger">
               <span></span>
@@ -99,20 +779,21 @@
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav-header">
-          <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          <button
-            class="mobile-nav-close"
-            aria-label="Close navigation"
-          ></button>
+          <span class="mobile-nav-logo">MARCO RAMCHARAN</span>
+          <button class="mobile-nav-close" aria-label="Close navigation"></button>
         </div>
         <ul class="mobile-nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Work</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
-        <a href="/contact" class="btn">Get Started</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -121,60 +802,30 @@
     <section class="portfolio-hero">
       <div class="container">
         <div class="portfolio-hero-content">
-          <h1 class="portfolio-heading">OUR WORK</h1>
+          <h1 class="portfolio-heading">MY WORK</h1>
           <p class="portfolio-subheading">
-            A showcase of selected projects that demonstrate our expertise in
-            creating digital experiences that engage, inspire, and convert.
+            Real websites for real South African businesses. Simple, affordable, and built to bring in customers.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Filter -->
-    <!--     <section class="portfolio-filter">
-      <div class="container">
-        <div class="filter-container">
-          <h3 class="filter-heading">Filter Projects</h3>
-          <div class="filter-options">
-            <button class="filter-button active">All</button>
-            <button class="filter-button">Web Design</button>
-            <button class="filter-button">E-Commerce</button>
-            <button class="filter-button">Branding</button>
-            <button class="filter-button">Custom Software</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <!-- Featured Project -->
     <section class="featured-project">
       <div class="container">
         <div class="featured-label">Featured Project</div>
         <div class="featured-container">
           <div class="featured-image">
-            <img src="/images/roxy.png" alt="TechVision Platform" />
+            <img src="/images/roxy.png" alt="Roxy Buchanan Advanced Skincare" />
           </div>
           <div class="featured-content">
             <div class="project-number">01</div>
             <h2 class="project-title">Roxy Buchanan Advanced Skincare</h2>
             <p class="project-category">Landing Page</p>
             <p class="project-description">
-              A Landing Page website for a client that does skin therapy, we
-              wanted to present her persomality in the form a website.
+              A clean landing page for a Durban-based skin therapist. The site showcases her services and makes it easy for clients to book appointments.
             </p>
-            <!--             <div class="project-stats">
-              <div class="project-stat">
-                <div class="stat-value">10%</div>
-                <div class="stat-label">Increase in clients</div>
-              </div>
-              <div class="project-stat">
-                <div class="stat-value">50+</div>
-                <div class="stat-label">Active users</div>
-              </div>
-            </div> -->
-
-            <a href="https://www.roxybuchananadvancedskincare.co.za" class="btn"
-              >View Project</a
-            >
+            <a href="https://www.roxybuchananadvancedskincare.co.za" class="btn">View Live Site</a>
           </div>
         </div>
       </div>
@@ -184,167 +835,138 @@
     <section class="projects-grid">
       <div class="container">
         <div class="grid-header">
-          <h2 class="grid-heading">Selected Projects</h2>
-          <!--           <a href="/" class="view-all-link">View All Projects</a>
- -->
+          <h2 class="grid-heading">Recent Projects</h2>
         </div>
 
         <div class="projects-container">
           <div class="project-card">
             <div class="card-image">
-              <img src="/images/stonepros.png" alt="Eco Marketplace" />
+              <img src="/images/stonepros.png" alt="StonePros" />
             </div>
             <div class="card-content">
               <p class="card-category">Landing Page</p>
-              <h3 class="card-title">Stonepros</h3>
+              <h3 class="card-title">StonePros</h3>
               <p class="card-description">
-                A sustainable products marketplace connecting eco-conscious
-                consumers with ethical brands. Custom-built with advanced
-                filtering and secure payment processing.
+                A professional website for a stone installation company. Built to showcase their work and make it easy for customers to request quotes.
               </p>
-              <a href="https://www.stonepros.co.za" class="card-link"
-                >View Project <span class="card-link-arrow">→</span></a
-              >
+              <a href="https://www.stonepros.co.za" class="card-link">View Live Site <span class="card-link-arrow">→</span></a>
             </div>
           </div>
 
           <div class="project-card">
             <div class="card-image">
-              <img src="/images/dad.png" alt="Artisan Bakery" />
+              <img src="/images/dad.png" alt="El Shaddai Interiors" />
             </div>
             <div class="card-content">
-              <p class="card-category">Branding / Web Design</p>
+              <p class="card-category">Landing Page</p>
               <h3 class="card-title">El Shaddai Interiors</h3>
               <p class="card-description">
-                Complete brand identity and website design for a premium artisan
-                bakery, showcasing their products and unique baking process
-                through rich storytelling.
+                A website for a local interior design business. Clean design that highlights their portfolio and makes it simple for clients to get in touch.
               </p>
-              <a href="https://www.elshaddaiinteriors.co.za" class="card-link"
-                >View Project <span class="card-link-arrow">→</span></a
-              >
+              <a href="https://www.elshaddaiinteriors.co.za" class="card-link">View Live Site <span class="card-link-arrow">→</span></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Case Study Section -->
-    <!--     <section class="case-study">
-      <div class="container">
-        <div class="case-study-container">
-          <div class="case-content">
-            <div class="case-label">Case Study</div>
-            <h2 class="case-title">
-              How We Transformed a Local Business Into a Digital Success
-            </h2>
-            <p class="case-description">
-              An in-depth look at our collaboration with LocalBites, a food
-              delivery service that needed to compete with larger platforms. Our
-              digital strategy and custom platform helped them increase orders
-              by 75% and expand to new markets.
-            </p>
-            <a href="/" class="case-btn">Read Case Study</a>
-          </div>
-          <div class="case-image">
-            <img src="/api/placeholder/800/600" alt="LocalBites Case Study" />
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Contact CTA Section -->
     <section class="contact-cta">
       <div class="container">
-        <h2 class="cta-heading">
-          Have a project in mind? Let's bring it to life.
-        </h2>
+        <h2 class="cta-heading">Want a website like these?</h2>
         <p class="cta-text">
-          We're always excited to collaborate on new challenges and create
-          digital experiences that make a difference.
+          Let's build your site. R2,500 gets you online in 48 hours.
         </p>
-        <a href="/contact/" class="btn">Get in Touch</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
     </section>
 
-    <!-- Footer - Magazine Style -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="footer-about">
-            <img
-              src="/images/logo_new_alt.png"
-              height="60px"
-              width="auto"
-              alt=""
-            />
+            <span class="footer-logo">MARCO RAMCHARAN</span>
             <p>
-              We design and develop custom websites that help businesses
-              establish a strong online presence and achieve their digital
-              goals.
+              I design and develop affordable websites that help South African small businesses get online and grow.
             </p>
-            <div class="social-links">
-              <div class="social-links">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61576913840290"
-                  class="social-icon"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/cool_coders" class="social-icon">
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/coolcoders.co.za/"
-                  class="social-icon"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linktr.ee/coolcoders" class="social-icon">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/@coolcoders"
-                  class="social-icon"
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
           </div>
           <div class="footer-nav">
             <h4 class="footer-heading">Navigation</h4>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/testimonials">Testimonials</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-services">
-            <h4 class="footer-heading">Services</h4>
+            <h4 class="footer-heading">What I Offer</h4>
             <ul class="footer-links">
-              <li><a href="/">Website Design</a></li>
-              <li><a href="/">Custom Software</a></li>
-              <li><a href="/">SEO</a></li>
-              <li><a href="/">Maintenance</a></li>
+              <li><a href="/#services">Website Design</a></li>
+              <li><a href="/#services">48-Hour Delivery</a></li>
+              <li><a href="/#services">Hosting & Support</a></li>
+              <li><a href="/#pricing">R2,500 Websites</a></li>
             </ul>
           </div>
           <div class="footer-contact">
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">Get in Touch</h4>
             <ul class="footer-links">
               <li>marco@coolcoders.co.za</li>
-              <li>084 293 7130</li>
-              <li>Durban</li>
+              <li><a href="https://wa.me/27123456789">+27 12 345 6789</a></li>
+              <li>Durban, South Africa</li>
             </ul>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2025 CoolCoders. All Rights Reserved.
+          &copy; 2025 Marco Ramcharan. All Rights Reserved.
         </div>
       </div>
     </footer>
-    <script src="/scripts/navbar.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27123456789" class="whatsapp-float" aria-label="Contact on WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <script>
+      // Mobile Navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileNavClose = document.querySelector('.mobile-nav-close');
+      const overlay = document.querySelector('.overlay');
+      const body = document.body;
+
+      function openMobileNav() {
+        mobileNav.classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('no-scroll');
+        mobileNavToggle.classList.add('nav-active');
+      }
+
+      function closeMobileNav() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+        mobileNavToggle.classList.remove('nav-active');
+      }
+
+      mobileNavToggle.addEventListener('click', openMobileNav);
+      mobileNavClose.addEventListener('click', closeMobileNav);
+      overlay.addEventListener('click', closeMobileNav);
+
+      // Close mobile nav when clicking on a link
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileNav);
+      });
+    </script>
   </body>
 </html>

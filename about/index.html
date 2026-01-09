@@ -8,81 +8,780 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title and Meta Tags -->
-    <title>Coolcoders | Web Design, Software & Hosting in Durban</title>
+    <title>About Marco Ramcharan | Affordable Websites for SA Businesses</title>
     <meta
       name="description"
-      content="Coolcoders is a Durban-based tech company offering website design, software development, web testing & hosting. Fast, local, reliable service."
+      content="Meet Marco Ramcharan - a self-taught web developer building affordable websites for South African small businesses. R2,500 websites + R100/month hosting."
     />
     <meta
       name="keywords"
-      content="Durban web design, website developers Durban, software development KwaZulu-Natal, web hosting South Africa, web testing services"
+      content="about Marco Ramcharan, web developer Durban, affordable websites South Africa"
     />
 
-    <!-- Open Graph Tags for Social Sharing -->
-    <meta
-      property="og:title"
-      content="Coolcoders | Web Design, Software & Hosting in Durban"
-    />
-    <meta
-      property="og:description"
-      content="Durban's all-in-one digital partner for websites, software, web testing, and reliable hosting. Get started with Coolcoders today."
-    />
-    <meta property="og:url" content="https://coolcoders.co.za" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://coolcoders.co.za/og-image.jpg" />
-    <!-- Replace with actual image -->
-    <link rel="stylesheet" href="/styles/about.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Michroma&family=Tourney:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
       rel="stylesheet"
     />
-    <!-- JSON-LD Structured Data (Local Business Schema) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Coolcoders",
-        "url": "https://www.coolcoders.co.za",
-        "logo": "https://www.coolcoders.co.za/images/logo4.png",
-        "image": "https://www.coolcoders.co.za/images/logo4.png",
-        "description": "Coolcoders is a Durban-based digital agency offering web design, software development, web testing, and hosting services.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Durban",
-          "addressRegion": "KwaZulu-Natal",
-          "addressCountry": "ZA"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+27 84 293 7130",
-          "contactType": "customer support"
-        },
-        "sameAs": [
-          "https://www.facebook.com/coolcoders",
-          "https://www.instagram.com/coolcoders"
-        ]
-      }
-    </script>
+    
+    <style>
+:root {
+    --black: black;
+    --dark-gray: black;
+    --medium-gray: #666666;
+    --light-gray: #e0e0e0;
+    --off-white: #f7f7f7;
+    --white: #ffffff;
+    --whatsapp: #25D366;
+    --accent: black;
+}
+
+.tourney-section {
+    font-family: "Viga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 0;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--medium-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--black);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--dark-gray);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1fa855;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* About Hero Section */
+.about-hero {
+    padding: 12rem 0 8rem;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.about-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 6rem;
+    align-items: start;
+}
+
+.about-heading h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.about-intro {
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.about-heading p {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-image-caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Story Section */
+.story {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 6rem;
+}
+
+.story-sidebar {
+    position: sticky;
+    top: 8rem;
+    height: fit-content;
+}
+
+.sidebar-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.sidebar-text {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.sidebar-quote {
+    padding: 2rem;
+    background-color: var(--white);
+    border-left: 4px solid var(--black);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.story-block h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.story-block p {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.story-stat {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--black);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+}
+
+/* Values Section */
+.values {
+    padding: 8rem 0;
+    background-color: var(--white);
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.values-header h2 {
+    font-size: 3.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.values-header p {
+    font-size: 1.3rem;
+    color: var(--medium-gray);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.value-card {
+    background-color: var(--white);
+    padding: 3rem 0;
+    border-top: 1px solid var(--light-gray);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+.value-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.value-desc {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    line-height: 1.7;
+}
+
+/* Contact CTA Section */
+.contact-cta {
+    padding: 8rem 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.contact-cta p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+}
+
+.contact-cta .btn {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.contact-cta .btn:hover {
+    background-color: var(--whatsapp);
+    color: var(--white);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 0 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    max-width: 350px;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-heading:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--white);
+    margin-top: 0.8rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Nav */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-active .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-active .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 6rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white);
+}
+
+.mobile-nav-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.mobile-nav-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.mobile-nav-close:before,
+.mobile-nav-close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    top: 50%;
+    left: 0;
+}
+
+.mobile-nav-close:before {
+    transform: rotate(45deg);
+}
+
+.mobile-nav-close:after {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 0;
+}
+
+.mobile-nav-links li:nth-child(odd) a {
+    background-color: var(--off-white);
+    color: var(--black);
+}
+
+.mobile-nav-links li:nth-child(even) a {
+    background-color: var(--white);
+    color: var(--medium-gray);
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-nav-links a:hover {
+    padding-left: 2.5rem;
+    color: var(--black);
+}
+
+.mobile-nav .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 990px) {
+    .about-hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .story-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .story-sidebar {
+        position: static;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+    
+    .nav-links, 
+    header .btn {
+        display: none;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    header {
+        padding: 1rem 0;
+    }
+
+    .about-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .about-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-intro {
+        font-size: 1.2rem;
+    }
+
+    .story,
+    .values,
+    .contact-cta {
+        padding: 4rem 0;
+    }
+
+    .values-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-cta h2 {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading h1 {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+}
+    </style>
   </head>
   <body class="tourney-section">
     <!-- Header -->
     <header>
       <div class="container">
         <nav>
-          <a href="/">
-            <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          </a>
+          <a href="/" class="logo">MARCO RAMCHARAN</a>
           <ul class="nav-links">
             <li><a href="/">HOME</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="/portfolio/">PORTFOLIO</a></li>
-            <li><a href="/contact/">CONTACT</a></li>
-            <li><a href="/testimonials">TESTIMONIALS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/#portfolio">WORK</a></li>
+            <li><a href="/#contact">CONTACT</a></li>
           </ul>
-          <a href="/contact" class="btn">Get Started</a>
+          <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
           <button class="mobile-nav-toggle" aria-label="Toggle navigation">
             <div class="hamburger">
               <span></span>
@@ -94,20 +793,21 @@
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav-header">
-          <img src="/images/logo_new.png" height="60px" width="auto" alt="" />
-          <button
-            class="mobile-nav-close"
-            aria-label="Close navigation"
-          ></button>
+          <span class="mobile-nav-logo">MARCO RAMCHARAN</span>
+          <button class="mobile-nav-close" aria-label="Close navigation"></button>
         </div>
         <ul class="mobile-nav-links">
           <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/#portfolio">Work</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
-        <a href="/contact" class="btn">Get Started</a>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -117,21 +817,20 @@
       <div class="container">
         <div class="about-hero-content">
           <div class="about-heading">
-            <h1>The Story Behind CoolCoders</h1>
+            <h1>The Guy Behind The Websites</h1>
             <p class="about-intro">
-              From self-taught developers to digital entrepreneurs, we're
-              transforming the web one pixel at a time.
+              From self-taught coder to helping South African small businesses get online—one affordable website at a time.
             </p>
             <p>
-              Based in the vibrant city of Durban, South Africa, we're a team of
-              passionate digital creators who live and breathe in the digital
-              sphere. We believe physical offices are a thing of the past.
+              I'm Marco, based in Durban, South Africa. I build websites that actually help small businesses grow without charging them agency prices.
             </p>
           </div>
           <div class="about-image">
-            <img src="/images/five.jpg" alt="Marco, founder of CoolCoders" />
+            <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #f7f7f7, #e0e0e0); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 120px;">
+              👨‍💻
+            </div>
             <div class="about-image-caption">
-              Marco, Founder & Lead Developer
+              Marco Ramcharan - Web Developer
             </div>
           </div>
         </div>
@@ -143,87 +842,65 @@
       <div class="container">
         <div class="story-container">
           <div class="story-sidebar">
-            <h2 class="sidebar-heading">Our Journey</h2>
+            <h2 class="sidebar-heading">My Journey</h2>
             <p class="sidebar-text">
-              What started as a side project has evolved into a thriving digital
-              studio with clients across industries and continents.
+              What started as late-night YouTube tutorials has turned into a mission to make professional websites accessible to every small business owner.
             </p>
             <div class="sidebar-quote">
-              "The web is our canvas, and code is our paint. We create digital
-              experiences that transform businesses."
+              "Why should only big companies with big budgets get decent websites? Small businesses deserve better."
             </div>
           </div>
           <div class="story-content">
             <div class="story-block">
-              <h3>Self-Taught Beginnings</h3>
+              <h3>Self-Taught & Proud</h3>
               <p>
-                CoolCoders began with Marco, a self-taught developer with a
-                passion for clean code and elegant design. Without formal
-                training but with an insatiable curiosity, he spent countless
-                hours learning programming languages, studying design
-                principles, and building websites for friends and family.
+                I didn't go to university for this. I learned web development the hard way—countless hours on YouTube, Stack Overflow, and building websites for friends and family who needed help.
               </p>
               <p>
-                This DIY approach to learning has shaped our company culture -
-                we value resourcefulness, continuous learning, and practical
-                solutions over rigid methodologies.
+                That DIY approach taught me something important: you don't need fancy degrees or expensive tools to build websites that work. You just need to care about getting results for real people.
               </p>
               <div class="story-stat">
-                <div class="stat-number">2025</div>
-                <div class="stat-label">Year Founded</div>
+                <div class="stat-number">2024</div>
+                <div class="stat-label">Started Freelancing</div>
               </div>
             </div>
             <div class="story-block">
-              <h3>Digital Nomads</h3>
+              <h3>Why R2,500?</h3>
               <p>
-                We don't have a physical office because we believe the digital
-                realm is our true workspace. This freedom allows us to
-                collaborate with talent worldwide and serve clients across
-                different time zones without geographical limitations.
+                I kept seeing small businesses—plumbers, towing companies, real estate agents—getting quoted R10,000+ for basic websites. That's insane. These businesses need to get online, not go broke doing it.
               </p>
               <p>
-                Being digital-first isn't just a business model for us - it's a
-                philosophy that informs how we approach projects, communicate
-                with clients, and design digital experiences.
+                So I figured out how to streamline my process, cut out the fluff, and deliver professional 4-page websites for R2,500. Add R100/month for hosting and support, and you're online without breaking the bank.
+              </p>
+              <div class="story-stat">
+                <div class="stat-number">48hrs</div>
+                <div class="stat-label">Average Delivery Time</div>
+              </div>
+            </div>
+            <div class="story-block">
+              <h3>Local, Direct, Fast</h3>
+              <p>
+                I'm based in Durban, but I work with businesses across South Africa. No fancy offices, no middlemen, no corporate BS. You WhatsApp me, I build your site, we get you online.
+              </p>
+              <p>
+                Being solo means I can keep prices low and turnaround times fast. It also means every client gets direct access to me—not a project manager, not a support team, just me.
               </p>
               <div class="story-stat">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Remote Work</div>
+                <div class="stat-label">Client Direct Contact</div>
               </div>
             </div>
             <div class="story-block">
-              <h3>Entrepreneurial Spirit</h3>
+              <h3>Real Results Matter</h3>
               <p>
-                The transition from developer to entrepreneur came naturally as
-                we began to understand the business challenges our clients
-                faced. Today, we don't just build websites - we create digital
-                solutions that drive real business results.
+                A website isn't just a digital business card—it's supposed to bring in customers. That's why I focus on the basics that actually work: fast loading, mobile-friendly, easy contact forms, WhatsApp integration, and Google Maps.
               </p>
               <p>
-                Our entrepreneurial mindset means we treat each client's
-                business as if it were our own, focusing on outcomes rather than
-                outputs.
+                I'm not trying to win design awards. I'm trying to help small business owners compete online without spending a fortune.
               </p>
               <div class="story-stat">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Projects Completed</div>
-              </div>
-            </div>
-            <div class="story-block">
-              <h3>Durban Roots</h3>
-              <p>
-                While we operate in the digital sphere, our roots are firmly
-                planted in Durban. The city's vibrant culture, diverse
-                community, and emerging tech scene have influenced our approach
-                to design and problem-solving.
-              </p>
-              <p>
-                We're proud to be part of South Africa's growing digital
-                economy, bringing local insights to global problems.
-              </p>
-              <div class="story-stat">
-                <div class="stat-number">1</div>
-                <div class="stat-label">Countries Served</div>
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Happy Clients</div>
               </div>
             </div>
           </div>
@@ -231,90 +908,33 @@
       </div>
     </section>
 
-    <!-- Team Section -->
-    <!--     <section class="team">
-      <div class="container">
-        <div class="team-header">
-          <h2>Meet Our Team</h2>
-          <p>The creative minds behind our digital solutions.</p>
-        </div>
-        <div class="team-grid">
-          <div class="team-member">
-            <div class="member-image">
-              <img
-                src="/images/marco2.png"
-                alt="Marco - Founder & Lead Developer"
-              />
-            </div>
-            <h3 class="member-name">Marco</h3>
-            <p class="member-role">Founder & Lead Developer</p>
-            <p class="member-bio">
-              A self-taught developer with a passion for clean code and
-              minimalist design. Marco started coding at 16 and never looked
-              back. When not building websites, he's exploring new technologies
-              or mentoring aspiring developers.
-            </p>
-          </div>
-          <div class="team-member">
-            <div class="member-image">
-              <img src="/images/girl.png" alt="Sarah - Design Director" />
-            </div>
-            <h3 class="member-name">Sarah AI</h3>
-            <p class="member-role">Design Director</p>
-            <p class="member-bio">
-              With a background in print design and typography, Sarah brings
-              editorial sensibilities to our digital projects. She believes that
-              good design should be invisible and focuses on creating intuitive
-              user experiences.
-            </p>
-          </div>
-          <div class="team-member">
-            <div class="member-image">
-              <img src="/images/obo.png" alt="David - Project Manager" />
-            </div>
-            <h3 class="member-name">David AI</h3>
-            <p class="member-role">Project Manager</p>
-            <p class="member-bio">
-              The organized mind keeping our projects on track. David's
-              background in business administration and his technical knowledge
-              make him the perfect bridge between our clients and development
-              team.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- Values Section -->
     <section class="values">
       <div class="container">
         <div class="values-header">
-          <h2>Our Values</h2>
-          <p>Principles that guide our work and relationships.</p>
+          <h2>What I Stand For</h2>
+          <p>Principles that guide how I work and who I work with.</p>
         </div>
         <div class="values-grid">
           <div class="value-card">
             <div class="value-icon">◆</div>
-            <h3 class="value-title">Craftsmanship</h3>
+            <h3 class="value-title">Speed</h3>
             <p class="value-desc">
-              We believe in doing things right. Every line of code, every pixel,
-              and every interaction is crafted with intention and care.
+              Your business can't wait weeks for a website. I deliver in 48 hours because every day without a site is a day you're losing customers to competitors.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">○</div>
-            <h3 class="value-title">Curiosity</h3>
+            <h3 class="value-title">Transparency</h3>
             <p class="value-desc">
-              We're lifelong learners, constantly exploring new technologies and
-              approaches to solve complex problems.
+              R2,500 upfront. R100/month hosting. No hidden fees, no surprise charges, no corporate nonsense. You know exactly what you're paying for.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">□</div>
-            <h3 class="value-title">Clarity</h3>
+            <h3 class="value-title">Results</h3>
             <p class="value-desc">
-              We value clear communication, transparent processes, and
-              straightforward solutions.
+              I'm not here to make pretty websites that don't work. I build sites that load fast, look professional, and actually help you get more customers.
             </p>
           </div>
         </div>
@@ -324,90 +944,98 @@
     <!-- Contact CTA Section -->
     <section class="contact-cta">
       <div class="container">
-        <h2>Ready to start your project?</h2>
-        <p>Let's create something amazing together.</p>
-        <a href="/contact/" class="btn">Get in Touch</a>
+        <h2>Ready to Get Your Business Online?</h2>
+        <p>Let's chat about your website. No pressure, just an honest conversation.</p>
+        <a href="https://wa.me/27123456789" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Me
+        </a>
       </div>
     </section>
 
-    <!-- Footer - Magazine Style -->
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="footer-about">
-            <img
-              src="/images/logo_new_alt.png"
-              height="60px"
-              width="auto"
-              alt=""
-            />
+            <span class="footer-logo">MARCO RAMCHARAN</span>
             <p>
-              We design and develop custom websites that help businesses
-              establish a strong online presence and achieve their digital
-              goals.
+              I design and develop affordable websites that help South African small businesses get online and grow.
             </p>
-            <div class="social-links">
-              <div class="social-links">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61576913840290"
-                  class="social-icon"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/cool_coders" class="social-icon">
-                  <i class="fab fa-x-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/coolcoders.co.za/"
-                  class="social-icon"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linktr.ee/coolcoders" class="social-icon">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/@coolcoders"
-                  class="social-icon"
-                >
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
           </div>
           <div class="footer-nav">
             <h4 class="footer-heading">Navigation</h4>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/testimonials">Testimonials</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><a href="/#contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-services">
-            <h4 class="footer-heading">Services</h4>
+            <h4 class="footer-heading">What I Offer</h4>
             <ul class="footer-links">
-              <li><a href="/">Website Design</a></li>
-              <li><a href="/">Custom Software</a></li>
-              <li><a href="/">SEO</a></li>
-              <li><a href="/">Maintenance</a></li>
+              <li><a href="/#services">Website Design</a></li>
+              <li><a href="/#services">48-Hour Delivery</a></li>
+              <li><a href="/#services">Hosting & Support</a></li>
+              <li><a href="/#pricing">R2,500 Websites</a></li>
             </ul>
           </div>
           <div class="footer-contact">
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">Get in Touch</h4>
             <ul class="footer-links">
               <li>marco@coolcoders.co.za</li>
-              <li>084 293 7130</li>
-              <li>Durban</li>
+              <li><a href="https://wa.me/27123456789">+27 12 345 6789</a></li>
+              <li>Durban, South Africa</li>
             </ul>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2025 CoolCoders. All Rights Reserved.
+          &copy; 2025 Marco Ramcharan. All Rights Reserved.
         </div>
       </div>
     </footer>
-    <script src="/scripts/navbar.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27123456789" class="whatsapp-float" aria-label="Contact on WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <script>
+      // Mobile Navigation
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      const mobileNavClose = document.querySelector('.mobile-nav-close');
+      const overlay = document.querySelector('.overlay');
+      const body = document.body;
+
+      function openMobileNav() {
+        mobileNav.classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('no-scroll');
+        mobileNavToggle.classList.add('nav-active');
+      }
+
+      function closeMobileNav() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+        mobileNavToggle.classList.remove('nav-active');
+      }
+
+      mobileNavToggle.addEventListener('click', openMobileNav);
+      mobileNavClose.addEventListener('click', closeMobileNav);
+      overlay.addEventListener('click', closeMobileNav);
+
+      // Close mobile nav when clicking on a link
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileNav);
+      });
+    </script>
   </body>
 </html>
