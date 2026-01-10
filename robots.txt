@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.coolcoders.co.za/sitemap.xml
+Sitemap: https://www.marcoramcharan.co.za/sitemap.xml
