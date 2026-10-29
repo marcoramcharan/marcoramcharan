@@ -1,116 +1,129 @@
-<div align="left">
+<div align="center">
 
-![badge](https://img.shields.io/badge/●_AVAILABLE_FOR_NEW_OPPORTUNITIES-00ffff?style=for-the-badge&labelColor=111111&color=111111)
+<img src="https://capsule-render.vercel.app/api?type=rect&color=D9FF3F&height=240&section=header&text=MARCO&fontSize=140&fontColor=0A0A0A&fontAlign=50&fontAlignY=55&stroke=0A0A0A&strokeWidth=3&desc=FULL%20STACK%20DEVELOPER%20%C2%B7%20DURBAN%2C%20SOUTH%20AFRICA&descSize=18&descAlignY=82&descAlign=50" alt="MARCO - Full Stack Developer, Durban" width="100%"/>
+
+<a href="https://github.com/marcoramcharan">
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=22&duration=3000&pause=1000&color=D9FF3F&background=0A0A0A&center=true&vCenter=true&width=700&height=60&lines=SELF-TAUGHT+FULL+STACK+DEVELOPER;SHIPPED+TO+PRODUCTION+AT+DECIDIO+GmbH;TYPESCRIPT+%C2%B7+REACT+%C2%B7+GO+%C2%B7+KUBERNETES;BUILDING+THINGS+THAT+ACTUALLY+WORK" alt="Typing animation" />
+</a>
+
+<br/>
+
+![Location](https://img.shields.io/badge/DURBAN-KWAZULU--NATAL-D9FF3F?style=for-the-badge&labelColor=0A0A0A)
+![Status](https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-D9FF3F?style=for-the-badge&labelColor=0A0A0A)
+![Focus](https://img.shields.io/badge/FOCUS-FULL%20STACK-D9FF3F?style=for-the-badge&labelColor=0A0A0A)
 
 </div>
 
-```
-// FULL STACK DEVELOPER · ETHICAL HACKER · DURBAN, ZA
-```
-
-# Marco Ramcharan.
-
-> From building sturdy tables to shipping scalable apps.  
-> *Self-taught. Carpenter turned engineer. I build things that last.*  
-> Now breaking into systems — legally.
+<br/>
 
 ---
+
+<h1 align="center">▛ MY WORK. ▟</h1>
+
+<p align="center">
+  Selected projects: a live production platform I contributed to at Decidio,<br/>
+  plus independently built work.
+</p>
+
+<br/>
+
+## ▍ 01 / TRUENDO &nbsp;`PRODUCTION`
+
+> **Privacy & consent management platform, POPIA compliant.**
+> Contributed to a live production product at **Decidio GmbH**. Customisable consent banners that align with South Africa's POPIA and other regional privacy law.
+
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-D9FF3F?style=flat-square&logo=typescript&logoColor=0A0A0A&labelColor=0A0A0A)
+![React](https://img.shields.io/badge/REACT-D9FF3F?style=flat-square&logo=react&logoColor=0A0A0A&labelColor=0A0A0A)
+![Go](https://img.shields.io/badge/GO-D9FF3F?style=flat-square&logo=go&logoColor=0A0A0A&labelColor=0A0A0A)
+![Kubernetes](https://img.shields.io/badge/KUBERNETES-D9FF3F?style=flat-square&logo=kubernetes&logoColor=0A0A0A&labelColor=0A0A0A)
+
+<br/>
+
+## ▍ 02 / STATIC PENGU &nbsp;`FULL STACK`
+
+> Independently built full stack application, end to end: UI, API, database and CDN delivery.
+
+![React](https://img.shields.io/badge/REACT-D9FF3F?style=flat-square&logo=react&logoColor=0A0A0A&labelColor=0A0A0A)
+![Express](https://img.shields.io/badge/EXPRESSJS-D9FF3F?style=flat-square&logo=express&logoColor=0A0A0A&labelColor=0A0A0A)
+![MongoDB](https://img.shields.io/badge/MONGODB-D9FF3F?style=flat-square&logo=mongodb&logoColor=0A0A0A&labelColor=0A0A0A)
+![BunnyCDN](https://img.shields.io/badge/BUNNYCDN-D9FF3F?style=flat-square&logo=bunny.net&logoColor=0A0A0A&labelColor=0A0A0A)
+
+<br/>
+
+## ▍ 03 / EL-SHADDAI INTERIORS &nbsp;`FRONTEND`
+
+> Clean, fast frontend build for an interiors business, deployed on Vercel.
+
+![HTML](https://img.shields.io/badge/HTML-D9FF3F?style=flat-square&logo=html5&logoColor=0A0A0A&labelColor=0A0A0A)
+![CSS](https://img.shields.io/badge/CSS-D9FF3F?style=flat-square&logo=css3&logoColor=0A0A0A&labelColor=0A0A0A)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-D9FF3F?style=flat-square&logo=javascript&logoColor=0A0A0A&labelColor=0A0A0A)
+![Vercel](https://img.shields.io/badge/VERCEL-D9FF3F?style=flat-square&logo=vercel&logoColor=0A0A0A&labelColor=0A0A0A)
+
+<br/>
+
+---
+
+<h1 align="center">▛ THE STACK. ▟</h1>
 
 <div align="center">
 
-| **5+** | **15+** | **2** | **∞** |
-|:---:|:---:|:---:|:---:|
-| YEARS CODING | TECHNOLOGIES | LIVE PRODUCTS | FOUNDER · EST. 2024 |
+| LAYER | TOOLS |
+| :--- | :--- |
+| **FRONTEND** | ![React](https://img.shields.io/badge/-React-0A0A0A?style=flat-square&logo=react&logoColor=D9FF3F) ![TypeScript](https://img.shields.io/badge/-TypeScript-0A0A0A?style=flat-square&logo=typescript&logoColor=D9FF3F) ![HTML5](https://img.shields.io/badge/-HTML5-0A0A0A?style=flat-square&logo=html5&logoColor=D9FF3F) ![CSS3](https://img.shields.io/badge/-CSS3-0A0A0A?style=flat-square&logo=css3&logoColor=D9FF3F) ![JavaScript](https://img.shields.io/badge/-JavaScript-0A0A0A?style=flat-square&logo=javascript&logoColor=D9FF3F) |
+| **BACKEND** | ![Go](https://img.shields.io/badge/-Go-0A0A0A?style=flat-square&logo=go&logoColor=D9FF3F) ![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?style=flat-square&logo=nodedotjs&logoColor=D9FF3F) ![Express](https://img.shields.io/badge/-Express-0A0A0A?style=flat-square&logo=express&logoColor=D9FF3F) |
+| **DATA** | ![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?style=flat-square&logo=mongodb&logoColor=D9FF3F) |
+| **INFRA** | ![Kubernetes](https://img.shields.io/badge/-Kubernetes-0A0A0A?style=flat-square&logo=kubernetes&logoColor=D9FF3F) ![Vercel](https://img.shields.io/badge/-Vercel-0A0A0A?style=flat-square&logo=vercel&logoColor=D9FF3F) ![Git](https://img.shields.io/badge/-Git-0A0A0A?style=flat-square&logo=git&logoColor=D9FF3F) |
 
 </div>
 
----
-
-```
-// WHAT I DO
-```
-
-**Full Stack Development** — I architect and ship end-to-end web applications. From database schema to pixel-perfect UI, I own the whole stack.
-
-**Cyber Security & Ethical Hacking** — Sharpening my offensive security skills. CTFs, pentesting fundamentals, and understanding systems well enough to break them — and build them better.
+<br/>
 
 ---
 
-```
-// TECH STACK
-```
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-111111?style=for-the-badge&logo=react&logoColor=00FFFF)
-![Next.js](https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=ffffff)
-![TypeScript](https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript&logoColor=00FFFF)
-![Tailwind](https://img.shields.io/badge/Tailwind-111111?style=for-the-badge&logo=tailwindcss&logoColor=00FFFF)
-
-**Backend**
-
-![Node.js](https://img.shields.io/badge/Node.js-111111?style=for-the-badge&logo=nodedotjs&logoColor=00FFFF)
-![Express](https://img.shields.io/badge/Express-111111?style=for-the-badge&logo=express&logoColor=ffffff)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql&logoColor=00FFFF)
-![Supabase](https://img.shields.io/badge/Supabase-111111?style=for-the-badge&logo=supabase&logoColor=00FFFF)
-
-**Security**
-
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-111111?style=for-the-badge&logo=kalilinux&logoColor=00FFFF)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-111111?style=for-the-badge&logo=burpsuite&logoColor=FF6600)
-![Wireshark](https://img.shields.io/badge/Wireshark-111111?style=for-the-badge&logo=wireshark&logoColor=00FFFF)
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=ffffff)
-
-**Tools**
-
-![Git](https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git&logoColor=00FFFF)
-![Docker](https://img.shields.io/badge/Docker-111111?style=for-the-badge&logo=docker&logoColor=00FFFF)
-![Vercel](https://img.shields.io/badge/Vercel-111111?style=for-the-badge&logo=vercel&logoColor=ffffff)
-![VS Code](https://img.shields.io/badge/VS_Code-111111?style=for-the-badge&logo=visualstudiocode&logoColor=00FFFF)
-
----
-
-```
-// GITHUB STATS
-```
+<h1 align="center">▛ BY THE NUMBERS. ▟</h1>
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=marcoramcharan&show_icons=true&bg_color=0d0d0d&title_color=00FFFF&icon_color=00FFFF&text_color=ffffff&border_color=222222&ring_color=00FFFF" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcoramcharan&layout=compact&bg_color=0d0d0d&title_color=00FFFF&text_color=ffffff&border_color=222222" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=marcoramcharan&show_icons=true&hide_border=false&border_color=D9FF3F&bg_color=0A0A0A&title_color=D9FF3F&text_color=F5F5F0&icon_color=D9FF3F&ring_color=D9FF3F&text_bold=true&include_all_commits=true" alt="GitHub stats" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=marcoramcharan&layout=compact&hide_border=false&border_color=D9FF3F&bg_color=0A0A0A&title_color=D9FF3F&text_color=F5F5F0" alt="Top languages" />
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=marcoramcharan&hide_border=false&border=D9FF3F&background=0A0A0A&ring=D9FF3F&fire=D9FF3F&currStreakNum=F5F5F0&sideNums=F5F5F0&currStreakLabel=D9FF3F&sideLabels=D9FF3F&dates=8A8A8A" alt="GitHub streak" />
 
 </div>
+
+<br/>
+
+---
+
+<h1 align="center">▛ LIKE WHAT<br/>YOU SEE? ▟</h1>
+
+<p align="center">
+  <b>Or reach me directly.</b>
+</p>
 
 <div align="center">
 
-![Streak](https://streak-stats.demolab.com?user=marcoramcharan&background=0d0d0d&ring=00FFFF&fire=00FFFF&currStreakLabel=00FFFF&border=222222&stroke=222222&dates=888888)
+<a href="mailto:miguelmarcoramcharan@gmail.com">
+  <img src="https://img.shields.io/badge/GET%20IN%20TOUCH%20%E2%86%92-D9FF3F?style=for-the-badge&logo=gmail&logoColor=0A0A0A&labelColor=0A0A0A" alt="Get in touch" />
+</a>
+<a href="https://github.com/marcoramcharan">
+  <img src="https://img.shields.io/badge/GITHUB-0A0A0A?style=for-the-badge&logo=github&logoColor=D9FF3F" alt="GitHub" />
+</a>
+<!-- Add your portfolio link below -->
+<!--
+<a href="https://YOUR-PORTFOLIO.com">
+  <img src="https://img.shields.io/badge/PORTFOLIO-0A0A0A?style=for-the-badge&logo=vercel&logoColor=D9FF3F" alt="Portfolio" />
+</a>
+-->
+
+<br/><br/>
+
+`miguelmarcoramcharan@gmail.com`
 
 </div>
 
----
+<br/>
 
-```
-// CURRENT FOCUS
-```
-
-🔨 &nbsp;**Shipping** — Live products in the wild. Building, iterating, scaling.
-
-🔐 &nbsp;**Learning** — Ethical hacking, penetration testing, network security.
-
-🧠 &nbsp;**Exploring** — The intersection of secure-by-design software and offensive thinking.
-
----
-
-```
-// LET'S CONNECT
-```
-
-[![Portfolio](https://img.shields.io/badge/SEE_MY_WORK-000000?style=for-the-badge&labelColor=ffffff&color=ffffff&logoColor=000000)](https://your-portfolio-url.com)
-&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LET'S_TALK-111111?style=for-the-badge&logo=linkedin&logoColor=00FFFF&labelColor=111111)](https://linkedin.com/in/marcoramcharan)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/MARCORAMCHARAN-111111?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=111111)](https://github.com/marcoramcharan)
-
----
-
-<sub>// I build things that last.</sub>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0A0A0A&height=140&section=footer&text=MARCO&fontSize=90&fontColor=D9FF3F&fontAlign=50&fontAlignY=45&desc=%C2%A9%202026%20MARCO%20RAMCHARAN%20%C2%B7%20FULL%20STACK%20DEVELOPER%20%C2%B7%20DURBAN&descSize=13&descAlignY=80&descAlign=50" alt="Footer" width="100%"/>
